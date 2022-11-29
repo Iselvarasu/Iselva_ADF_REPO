@@ -5,21 +5,12 @@
 			"referenceName": "SelvaAzureBlobStorage_LS",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"input_file_name": {
-				"type": "string",
-				"defaultValue": "DailySales.txt"
-			}
-		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().input_file_name",
-					"type": "Expression"
-				},
+				"fileName": "DEPT.txt",
 				"container": "input"
 			}
 		}
