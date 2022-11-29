@@ -1,0 +1,17 @@
+{
+	"name": "trigger_alert",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2022-11-29T17:07:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
