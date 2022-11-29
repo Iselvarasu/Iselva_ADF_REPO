@@ -16,11 +16,11 @@
 				"userProperties": [
 					{
 						"name": "Source",
-						"value": "input//@{pipeline().parameters.input_file_name}"
+						"value": "input//DEPT.txt"
 					},
 					{
 						"name": "Destination",
-						"value": "output//@{pipeline().parameters.output_file_name}"
+						"value": "output//"
 					}
 				],
 				"typeProperties": {
@@ -45,35 +45,25 @@
 				"inputs": [
 					{
 						"referenceName": "BlobtextfileDataset",
-						"type": "DatasetReference",
-						"parameters": {
-							"input_file_name": {
-								"value": "@pipeline().parameters.input_file_name",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "bloboutputDS",
-						"type": "DatasetReference",
-						"parameters": {
-							"output_file_name": {
-								"value": "@pipeline().parameters.output_file_name",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}
 		],
 		"parameters": {
 			"input_file_name": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "input\\Dept.txt"
 			},
 			"output_file_name": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "output\\Dept123.txt"
 			}
 		},
 		"annotations": [],
