@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "SelvaADF48"
+		},
+		"SelvaAzureBlobStorage_LS_connectionString": {
+			"value": ""
+		},
+		"SelvaAzureSqlDatabase_LS_connectionString": {
+			"value": ""
+		},
+		"event trigger_properties_Load_hourly_daily_data_parameters_FileName": {
+			"value": "@triggerBody().fileName"
+		},
+		"event trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/36d588e1-e9d7-4841-aed3-99be51a8011f/resourceGroups/Selva_ADF/providers/Microsoft.Storage/storageAccounts/mohanastorage48"
+		}
+	}
+}
