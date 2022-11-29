@@ -56,16 +56,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"input_file_name": {
-				"type": "string",
-				"defaultValue": "input\\Dept.txt"
-			},
-			"output_file_name": {
-				"type": "string",
-				"defaultValue": "output\\Dept123.txt"
-			}
-		},
 		"annotations": [],
 		"lastPublishTime": "2022-11-24T09:04:31Z"
 	},
