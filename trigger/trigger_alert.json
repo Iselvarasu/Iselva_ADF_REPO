@@ -2,16 +2,12 @@
 	"name": "trigger_alert",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
 					"referenceName": "Copy_data",
 					"type": "PipelineReference"
-				},
-				"parameters": {
-					"input_file_name": "12",
-					"output_file_name": "1111"
 				}
 			}
 		],
