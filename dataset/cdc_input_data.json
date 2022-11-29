@@ -1,0 +1,19 @@
+{
+	"name": "cdc_input_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SelvaAzureBlobStorage_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "emp_test_14Nov2022.txt",
+				"container": "cdcinputdata"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

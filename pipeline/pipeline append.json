@@ -1,0 +1,39 @@
+{
+	"name": "pipeline append",
+	"properties": {
+		"activities": [
+			{
+				"name": "Append variable1",
+				"type": "AppendVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Append_v1",
+					"value": {
+						"value": "@pipeline().parameters.f1",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"f1": {
+				"type": "string",
+				"defaultValue": "sales"
+			}
+		},
+		"variables": {
+			"Append_v1": {
+				"type": "Array",
+				"defaultValue": [
+					"1",
+					"2",
+					"3"
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-11-25T12:45:43Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

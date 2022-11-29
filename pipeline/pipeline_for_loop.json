@@ -1,0 +1,60 @@
+{
+	"name": "pipeline_for_loop",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [
+					{
+						"name": "Uv1",
+						"value": "@item()"
+					}
+				],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.p1",
+						"type": "Expression"
+					},
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Append variable1",
+							"type": "AppendVariable",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "v1",
+								"value": {
+									"value": "@item()",
+									"type": "Expression"
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"p1": {
+				"type": "array",
+				"defaultValue": [
+					5,
+					4,
+					3,
+					2,
+					1
+				]
+			}
+		},
+		"variables": {
+			"v1": {
+				"type": "Array"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-11-25T12:45:43Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

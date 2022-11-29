@@ -1,0 +1,9 @@
+{
+	"name": "SelvaADF48",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e9d3d69e-5fef-4d79-a39d-d11bd78c3494",
+		"tenantId": "e5e14713-49f4-4554-8cdc-f7f567f2e5f3"
+	}
+}
