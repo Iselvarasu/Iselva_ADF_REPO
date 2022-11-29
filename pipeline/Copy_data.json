@@ -70,10 +70,12 @@
 		],
 		"parameters": {
 			"input_file_name": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "input\\Dept.txt"
 			},
 			"output_file_name": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "output\\Dept123.txt"
 			}
 		},
 		"annotations": [],
